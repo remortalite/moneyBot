@@ -1,15 +1,15 @@
 from src.messages import start_message
 from src.utils import *
+from src.bot import bot, dp
 
 import logging
-
-bot = None
+from aiogram import executor
 
 
 def main():
-   start_message()
+    logging.basicConfig(level=logging.DEBUG)
+    executor.start_polling(dp, skip_updates=True)
 
 
 if __name__ == '__main__':
-    logging.basicConfig(level=logging.DEBUG)
     main()

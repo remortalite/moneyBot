@@ -21,7 +21,7 @@ def help_message():
 
     create_commands()
 
-    help_string = ""
+    help_string = "Message format: <i>sum category</i> (e.g. <i>'750 food'</i>)\n"
     for k, v in available_commands.items():
         help_string += f"/{k} -- {v}\n"
     logging.info(f"Help message: '{help_string}'")
@@ -34,6 +34,10 @@ def start_message():
     """
 
     message_text = "Hello! Welcome to MoneyBot!"
-    message_text += "\n\n" + help_message().strip() # add help msg to start_message
+ 
+    message_text += "Send a message with a wasted sum and category of wasting. "\
+            "That sum will be written, you can get "\
+            "a report of your wastings for exact period\n\n"
+    message_text += help_message().strip() # add help msg to start_message
     logging.info(f"Start message: '{message_text}'")
     return message_text
