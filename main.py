@@ -1,5 +1,5 @@
-from messages import start_message
-from utils import *
+from src.messages import start_message
+from src.utils import *
 
 import logging
 
