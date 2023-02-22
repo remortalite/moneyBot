@@ -9,7 +9,7 @@ available_commands = dict() # "name : description"
 def create_commands() -> None:
     d = dict()
     d['help'] = 'print this message'
-    d['get'] = 'send all the wastings'
+    d['getcsv'] = 'get .csv file with all saved data'
 
     available_commands.update(d)
 

@@ -28,7 +28,7 @@ async def show_help_message(msg : types.Message):
 
 @dp.message_handler(commands=['getcsv'])
 async def get_csv_command(msg : types.Message):
-    await msg.reply_document(open(f"user{msg.from_id}.csv", "rb"))
+    await msg.reply_document(open(f"./user{msg.from_id}.csv", "rb"))
 
 
 @dp.message_handler(content_types=['text'])

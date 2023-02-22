@@ -8,7 +8,7 @@ from aiogram import executor
 
 def main():
     logging.basicConfig(level=logging.DEBUG)
-    executor.start_polling(dp, skip_updates=True)
+    executor.start_polling(dp, skip_updates=False)
 
 
 if __name__ == '__main__':
