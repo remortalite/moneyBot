@@ -1,9 +1,8 @@
 from src.messages import start_message
 from src.utils import *
+from src.bot import bot
 
 import logging
-
-bot = None
 
 
 def main():
